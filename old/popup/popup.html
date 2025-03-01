@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <title>자동 외출 신청 프로그램</title>
+    
+    <label></label>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body class="light">
+    <h1>빠른 입력값 설정</h1> 
+    <strong>설정에 들어가 기본값을 입력해 주세요.</strong>
+    <button id="setting"><i class="fa-solid fa-gears fa-2x"></i></button>
+    <hr>
+    
+    <div class="input-container">
+        <label>구글 시트에 예약:</label>
+        <input type="checkbox" id="Gdocs_available">
+    </div>
+    
+    <div class="input-container">
+        <label>담당쌤:</label>
+        <input type="text" id="teacher">
+    </div>
+
+    <div class="input-container">
+        <label>1교시:</label> 
+        <input type="checkbox" id="time1"> 
+        <tab><label>2교시:</label> 
+        <input type="checkbox" id="time2">  
+    </div>
+    
+    <div class="input-container">
+        <label>위치:</label>
+        <div id="location_input_container">
+            <input type="text" id="noGdocs_location">
+            <select name="한빛꿈터 대여관" id="Gdocs_location">
+                <option value="뉴턴관">뉴턴관(4인실)</option>
+                <option value="다윈관">다윈관(4인실)</option>
+                <option value="퀴리관">퀴리관(6인실)</option>
+                <option value="허블관">허블관(8인실)</option>
+                <option value="리만관">리만관(8인실)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="input-container"> 
+        <label>사유:</label>
+        <input type="text" id="reason">
+    </div>
+
+    <hr>
+    <div id = 'error-message' style="color:red; display: none;"></div>
+    <div id = 'save-message' style="color:greenyellow; display: none;"></div>
+    
+    <button id="save">저장</button> <br>
+    
+    <script src="/popup/popup.js"></script>
+</body>
+</html>
