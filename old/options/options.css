@@ -1,0 +1,103 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.input-container {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+.input-container input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#location_input_container {
+    display: inline-block;
+}
+
+
+
+input[type="number"], button {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+button#save {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button#save:hover {
+    background-color: #45a049;
+}
+
+img {
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+strong {
+    color: #666;
+    font-size: 14px;
+}
+
+#error-message {
+    color:red;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#save-message {
+    color:greenyellow;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}

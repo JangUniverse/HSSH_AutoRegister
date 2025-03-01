@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자동 외출 신청 프로그램</title>
+    <label></label>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body class="light">
+    <h1>기본 입력값 설정</h1>
+    <strong>*학번과 비번은 사용자의 구글 계정 내에서만 저장되며, 제작자에게 전송되지 않습니다.</strong>
+    <br><br>
+    <hr>
+    
+    <div class="input-container">
+        <label>구글 시트 사용:</label>
+        <input type="checkbox" id="Gdocs_available">
+    </div>
+    
+    <div class="input-container">
+        <label>온웨이에듀 링크:</label>
+        <input type="text" id="Onewayedu-link">
+    </div>
+    
+    <div class="input-container">
+        <label>구글 시트 링크:</label>
+        <input type="text" id="Gdocs-link">
+    </div>
+    
+    <hr>
+    
+    <div class="input-container">
+        <label>학번:</label>
+        <input type="text" id="number" maxlength="4">
+    </div>
+    
+    <div class="input-container">
+        <label>이름:</label>
+        <input type="text" id="name">
+    </div>
+    
+    <div class="input-container">
+        <label>온웨이에듀 비번:</label>
+        <input type="password" id="password">
+    </div>
+    
+    <div class="input-container">
+        <label>담임쌤:</label>
+        <input type="text" id="teacher">
+    </div>
+
+    <div class="input-container">
+        <label>1교시:</label> 
+        <input type="checkbox" id="time1"> 
+        <tab><label>2교시:</label> 
+        <input type="checkbox" id="time2">  
+    </div>
+    
+    <div class="input-container">
+        <label>위치:</label>
+        <div id="location_input_container">
+            <input type="text" id="noGdocs_location">
+            <select name="한빛꿈터 대여관" id="Gdocs_location">
+                <option value="뉴턴관">뉴턴관(4인실)</option>
+                <option value="다윈관">다윈관(4인실)</option>
+                <option value="퀴리관">퀴리관(6인실)</option>
+                <option value="허블관">허블관(8인실)</option>
+                <option value="리만관">리만관(8인실)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="input-container"> 
+        <label>사유:</label>
+        <input type="text" id="reason">
+    </div>
+    
+    <img src="/images/map.png" width="400">
+    <hr>
+    <div id = 'error-message' style="color:red; display: none;"></div>
+    <div id = 'save-message' style="color:greenyellow; display: none;"></div>
+    
+    <button id="save">저장</button> <br>
+    
+    <script src="/options/options.js"></script>
+</body>
+</html>
